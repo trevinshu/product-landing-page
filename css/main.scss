@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+
+    img {
+        max-width: 3rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .nav-links {
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+            }
+
+            a:first-of-type, a:nth-of-type(2) {
+                margin-right: 1rem;
+            }
+
+            a:hover {
+                text-decoration: underline solid black ;
+            }
+        }
+    }
+}
+
+main {
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #features {
+        background-color: lightgray;
+        border-radius: 0.5rem;
+        margin: 3rem;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                padding: 0.8rem 0;
+                text-transform: capitalize;
+            }
+        }
+
+        article:first-of-type, article:nth-of-type(2) {
+            padding-right: 1.5rem;
+        }
+    }
+
+    #demo {
+        display: flex;
+        justify-content: center;
+        
+        iframe {
+            border: none;
+            box-shadow: 0 0 1rem 0 #EBEBEB ;
+        }
+    }
+
+    #purchase {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+
+        article {
+            background-color: lightgray;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+
+            i {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+                padding: 1rem 0;
+            }
+
+            p {
+                font-weight: 300;
+            }
+            
+            p:nth-of-type(2) {
+                padding: 1rem 0;
+            }
+
+            button {
+                margin-top: 1rem;
+                padding: 1.5rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: #080517;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        article:first-of-type, article:nth-of-type(2) {
+            margin-right: 2rem;
+        }
+    }
+
+    .updates {
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2.5rem;
+
+            label {
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            input:first-of-type {
+                width: 50%;
+                height: 3rem;
+                border-radius: 1rem;
+                padding: 0.5rem;
+            }
+
+            input:last-of-type {
+                border-radius: 0.5rem;
+                padding: 1rem;
+                margin: 2rem 0;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: lightgray;
+    padding: 2rem 0;
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+
+                i {
+                    color: black;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        li:first-of-type, li:nth-of-type(2) {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        #purchase {
+            article {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
